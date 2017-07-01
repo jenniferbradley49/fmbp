@@ -20,7 +20,7 @@ class CreateSurveyItemsTable extends Migration
     			$table->integer('survey_question_id')->unsigned();
     			$table->boolean('bool_include');
 // the next row is the order of presentation, start with 100, increment by 10
-    			$table->integer('int_order');
+    			$table->integer('int_order')->default(100);
     			$table->string('str_text');
    				$table->string('str_mult_resps_id', 20)->nullable();
     			$table->timestamps();

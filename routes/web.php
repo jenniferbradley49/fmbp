@@ -159,3 +159,7 @@
 	Route::get('client/edit_lead_vars', 'ClientController@getEditLeadVars');
 	Route::post('client/edit_lead_vars', 'ClientController@postEditLeadVars');
 	
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
